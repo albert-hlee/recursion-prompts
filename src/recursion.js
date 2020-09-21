@@ -34,8 +34,6 @@ var sum = function(array) {
 var arraySum = function(array) {
   if (typeof array[0] === 'object') {
     return arraySum(array[0])
-  } else {
-    return array.pop() + arraySum(array)
   }
 };
 
