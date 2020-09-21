@@ -24,7 +24,10 @@ var sum = function(array) {
   } else if (array.length === 0) {
     return 0;
   } else {
-    var smallerArray = array;
+    var smallerArray = [];
+    for (var i = 0; i < array.length; i++) {
+      smallerArray.push(array[i]);
+    }
     return smallerArray.pop() + sum(smallerArray);
   }
 };
@@ -34,6 +37,8 @@ var sum = function(array) {
 var arraySum = function(array) {
   if (typeof array[0] === 'object') {
     return arraySum(array[0])
+  } else {
+    return
   }
 };
 
