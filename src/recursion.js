@@ -24,7 +24,6 @@ var sum = function(array) {
   } else if (array.length === 0) {
     return 0;
   } else {
-    var smallerArray = array;
     return smallerArray.pop() + sum(smallerArray);
   }
 };
